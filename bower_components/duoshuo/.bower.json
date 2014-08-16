@@ -1,0 +1,38 @@
+{
+  "name": "duoshuo",
+  "version": "0.4.4",
+  "authors": [
+    "turing <o.u.turing@gmail.com>"
+  ],
+  "description": "a duoshuo SDK for angular.js, pure front-end, cross-domain request supported.",
+  "main": "dist/duoshuo.min.js",
+  "keywords": [
+    "duoshuo",
+    "duoshuo-sdk",
+    "angular",
+    "angular.js",
+    "duoshuo-embed"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/duoshuo/angular-duoshuo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "angular": "*"
+  },
+  "_release": "0.4.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.4",
+    "commit": "2a4243e0a7f483cff4c52cff0584feed47724887"
+  },
+  "_source": "https://github.com/duoshuo/angular-duoshuo.git",
+  "_target": "~0.4.4",
+  "_originalSource": "duoshuo"
+}

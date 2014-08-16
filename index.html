@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="airpub" ng-controller="global">
+  <head>
+    <meta charset="UTF-8">
+    <title ng-bind="configs.name"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- dependencies stylesheets -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/nprogress/nprogress.css">
+    <link rel="stylesheet" href="bower_components/highlightjs/styles/github.css">
+    <!-- default theme: chill -->
+    <link rel="stylesheet" href="bower_components/chill/css/chill.min.css" />
+    <!-- dependencies scripts -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/nprogress/nprogress.js"></script>
+    <script src="bower_components/angular-base64/angular-base64.min.js"></script>
+    <script src="bower_components/angular-md5/angular-md5.min.js"></script>
+    <script src="bower_components/duoshuo/dist/duoshuo.min.js"></script>
+    <script src="bower_components/upyun/dist/upyun.min.js"></script>
+    <script src="bower_components/node-uuid/uuid.js"></script>
+    <script src="bower_components/marked/lib/marked.js"></script>
+    <script src="bower_components/highlightjs/highlight.pack.js"></script>
+  </head>
+  <body ng-controller="base" ng-class="state.current.controller">
+    <header ng-class="state.current.controller">
+      <nav>
+        <div class="options pull-right">
+          <a ui-sref="create" class="avatar" ng-show="user" ng-cloak>
+            <img ng-src="{{user.avatar_url}}" alt="{{user.name}}" class="img-circle"/>
+          </a>
+          <!-- why this funcking `ng-cloak` does not work ?! -->
+          <a id="signin-btn" ng-href="http://duoshuo.com/login?redirect_uri={{location.$$absUrl}}" ng-show="!user" ng-cloak>
+            <span class='glyphicon glyphicon-off'></span>
+          </a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="logo">
+          <h1>
+            <a ui-sref="index" ng-bind="configs.name"></a>
+            <span class="description" ng-bind="configs.description"></span>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <section id="content" class="content">
+      <div ui-view>
+        <div class="loading container">loading...</div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            &copy; 2014 powered by <a href="http://github.com/duoshuo/airpub">airpub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="alert-module">
+      <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" ng-bind="alert.msg"></alert>
+    </div>
+    <!-- airpub config file -->
+    <script src="configs.js"></script>
+    <!-- duoshuo embed js -->
+    <script src="http://static.duoshuo.com/embed.unstable.js"></script>
+
+    <!-- for production: -->
+    <script src="dist/airpub.min.js"></script>
+
+    <!-- TODO: duoshuo CDN -->
+    <!-- <script src="http://static.duoshuo.com/airpub/airpub-0.1.0.min.js"></script> -->
+
+    <!-- for development: -->
+    <!-- core editor -->
+    <!-- <script src="src/lib/editor.js"></script> -->
+    <!-- airpub angular.js app -->
+    <!-- <script src="src/airpub.js"></script> -->
+    <!-- airpub directives -->
+    <!-- <script src="src/directives/editor.js"></script> -->
+    <!-- airpub filters -->
+    <!-- <script src="src/filters/marked.js"></script> -->
+    <!-- airpub built-in addons -->
+    <!-- <script src="src/addons/meta.js"></script> -->
+    <!-- airpub controllers -->
+    <!-- <script src="src/controllers/global.js"></script> -->
+    <!-- <script src="src/controllers/base.js"></script> -->
+    <!-- <script src="src/controllers/archive.js"></script> -->
+    <!-- <script src="src/controllers/single.js"></script> -->
+    <!-- <script src="src/controllers/admin.js"></script> -->
+  </body>
+</html>
