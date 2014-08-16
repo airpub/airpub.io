@@ -5,8 +5,6 @@ var airpubConfigs = {
   description: '轻如蝉翼的写作工具',
   // blog uri
   url: 'http://airpub.io',
-  // blog theme
-  theme: 'airpub-io',
   // for images upload
   upyun: {
     bucket: 'airpub',
