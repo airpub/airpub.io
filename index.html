@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="airpub" ng-controller="global">
-  <head>
+  <head ng-controller="meta">
+    <base href="/" />
     <meta charset="UTF-8">
-    <title ng-bind="configs.name"></title>
+    <title ng-bind="title"></title>
+    <meta name="fragment" content="!" />
+    <meta name="description" content="{{description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- dependencies stylesheets -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -56,14 +59,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
-            &copy; 2014 powered by <a href="http://github.com/duoshuo/airpub">airpub</a>
+            &copy; <span class="copyright-year" ng-bind="copyrightYear"></span> <a ng-href="{{configs.url}}"><span class="copyright-name" ng-bind="configs.name"></span></a>. Powered by <a href="http://github.com/duoshuo/airpub">airpub</a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- ui modules -->
     <div class="alert-module">
       <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" ng-bind="alert.msg"></alert>
     </div>
+
     <!-- airpub config file -->
     <script src="configs.js"></script>
     <!-- duoshuo embed js -->
@@ -88,6 +93,7 @@
     <!-- <script src="src/addons/meta.js"></script> -->
     <!-- airpub controllers -->
     <!-- <script src="src/controllers/global.js"></script> -->
+    <!-- <script src="src/controllers/meta.js"></script> -->
     <!-- <script src="src/controllers/base.js"></script> -->
     <!-- <script src="src/controllers/archive.js"></script> -->
     <!-- <script src="src/controllers/single.js"></script> -->
