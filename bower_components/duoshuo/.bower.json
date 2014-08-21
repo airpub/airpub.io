@@ -1,6 +1,6 @@
 {
   "name": "duoshuo",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "authors": [
     "turing <o.u.turing@gmail.com>"
   ],
@@ -26,13 +26,13 @@
   "dependencies": {
     "angular": "*"
   },
-  "_release": "0.4.5",
+  "_release": "0.4.6",
   "_resolution": {
     "type": "version",
-    "tag": "v0.4.5",
-    "commit": "d354d9557a09302906255a162c62280561c70936"
+    "tag": "v0.4.6",
+    "commit": "c31aa2a7a69e08cc7dc60175ec665516d76e0204"
   },
   "_source": "https://github.com/duoshuo/angular-duoshuo.git",
-  "_target": "~0.4.5",
+  "_target": "~0.4.6",
   "_originalSource": "duoshuo"
 }

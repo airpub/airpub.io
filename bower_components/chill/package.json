@@ -1,9 +1,9 @@
 {
   "name": "chill",
-  "version": "0.1.0",
   "description": "the very first theme for Airpub",
   "author": "turing <o.u.turing@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "less": "node_modules/.bin/lessc -x less/chill.less css/chill.min.css",
     "watch": "node_modules/.bin/rewatch less/*.less -c 'npm run less'",

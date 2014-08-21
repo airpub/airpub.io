@@ -1,6 +1,6 @@
 {
   "name": "upyun",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "authors": [
     "turing <o.u.turing@gmail.com>"
   ],
@@ -31,13 +31,13 @@
     "js-base64": "2.1.5",
     "js-md5": "1.1.0"
   },
-  "_release": "0.2.3",
+  "_release": "0.2.4",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.3",
-    "commit": "cb02babba40e25bbe1fac3873864ff20e171eff1"
+    "tag": "v0.2.4",
+    "commit": "0dbe6856055eaeb1ae703ece686d1501201fc760"
   },
   "_source": "https://github.com/turingou/upyun.git",
-  "_target": "~0.2.3",
+  "_target": "~0.2.4",
   "_originalSource": "upyun"
 }
