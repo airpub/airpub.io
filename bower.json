@@ -1,11 +1,10 @@
 {
-  "name": "airpub",
-  "version": "0.2.0",
-  "homepage": "https://github.com/duoshuo/airpub",
+  "name": "airpub.io",
+  "homepage": "https://github.com/airpub/airpub.io",
   "authors": [
     "Guo Yu <o.u.turing@gmail.com>"
   ],
-  "description": "a pure front-end blog engine powered by duoshuo API",
+  "description": "airpub.io is official airpub CDN portal",
   "main": "index.html",
   "keywords": [
     "blog",
@@ -21,17 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.20",
-    "angular-bootstrap": "~0.11.0",
-    "angular-ui-router": "~0.2.10",
-    "bootstrap": "~3.2.0",
-    "angular-snap": "~1.5.4",
-    "nprogress": "~0.1.6",
-    "node-uuid": "~1.4.1",
-    "upyun": "~0.2.4",
-    "duoshuo": "~0.4.6",
-    "marked": "~0.3.2",
-    "highlightjs": "~8.0.0",
-    "chill": "~0.1.3"
+    "chill": "~0.2.0"
   }
 }
