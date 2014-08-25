@@ -8,11 +8,11 @@
     <meta name="description" content="{{description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- dependencies stylesheets and scripts -->
-    <link rel="stylesheet" href="cdn/airpub-dependencies.min.css?v=0.2.1">
-    <script src="cdn/airpub-dependencies.min.js?v=0.2.1"></script>
+    <link rel="stylesheet" href="http://cdn.airpub.io/airpub-dependencies.min.css?v=0.2.1">
+    <script src="http://cdn.airpub.io/airpub-dependencies.min.js?v=0.2.1"></script>
     <!-- default theme: chill -->
-    <link rel="stylesheet" href="cdn/themes/chill/0.2.0/css/chill.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="cdn/themes/chill/0.2.0/favicon.ico" />
+    <link rel="stylesheet" href="themes/chill/0.2.0/css/chill.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="themes/chill/0.2.0/favicon.ico" />
   </head>
   <body ng-controller="base" ng-class="state.current.controller">
     <div ui-view="layout"></div>
@@ -22,7 +22,7 @@
         description: '轻如蝉翼的写作工具', // just a little description
         url: 'http://airpub.io', // blog uri
         theme: 'chill/0.2.0', // current theme
-        themePath: 'cdn/themes', // theme Path
+        themePath: 'themes', // theme Path
         upyun: { // for images upload
           bucket: 'airpub',
           form_api_secret: 'FWCh9Op1PNDJ0RkT6H+C5kJ6oSI='
@@ -33,6 +33,6 @@
       };
     </script>
     <script src="http://static.duoshuo.com/embed.unstable.js"></script> 
-    <script src="cdn/airpub.min.js?v=0.2.1"></script>
+    <script src="http://cdn.airpub.io/airpub.min.js?v=0.2.1"></script>
   </body>
 </html>
