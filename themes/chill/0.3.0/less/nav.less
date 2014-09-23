@@ -1,0 +1,85 @@
+.signin-section {
+  background-color: #444;
+  .signin-buttons {
+    font-size: 16px;
+    a {
+      color: #fff;
+      display: block;
+      float: left;
+      padding: 12px 0px;
+      text-decoration: none;
+      margin-right: 30px;
+      i {
+        padding-right: 4px;
+      }
+      &:hover {
+        text-decoration: none;
+        color: #ddd;
+      }
+      @media @mobile {
+        display: block;
+        float: none;
+        margin-right: 0px;
+        margin-bottom: 1px;
+        font-size: 18px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        &.weibo {
+          background-color: #C0392B;
+        }
+        &.qq {
+          background-color: #3498DB - #444;
+        }
+        &.baidu {
+          background-color: #2980B9;
+        }
+        &.renren {
+          background-color: #3498DB;
+        }
+        &.douban {
+          background-color: #27AE60;
+        }
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  @media @mobile {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+nav {
+  a {
+    color: #fff;
+    display: block;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  a.toggle-sidebar {
+    float: left;
+    width: 80px;
+  }
+  span {
+    font-size: 24px;
+    color: #fff
+  }
+  .options {
+    a {
+      float: left;
+    }
+  }
+  .avatar {
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
